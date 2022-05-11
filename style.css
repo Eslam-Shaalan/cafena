@@ -139,12 +139,14 @@ display:none ;
 color: var(--main-color);
 }
 .header .cart-items-container{
+    display: block;
     position: absolute;
     top: 100%; right: -100%;
-    height: calc(100vh - 9.5rem);
+    height: calc(100vh - 20rem);
     width: 35rem;
     background: #fff; 
     padding: 0 1.5rem;
+    overflow: auto;
 }
 .header .cart-items-container.active{
     right: 0;
@@ -184,8 +186,8 @@ padding-bottom: .5rem;
         height: 5rem;
         text-align: center;
         font-size: 3rem;
-        position: absolute;
-        bottom: 2rem;
+        position: static;
+        top: 1rem;
     }
 .home {
     min-height: 100vh;
